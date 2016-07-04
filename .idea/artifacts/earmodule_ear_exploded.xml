@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="earmodule:ear exploded">
+    <output-path>$PROJECT_DIR$/earmodule/target/earmodule-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="earmodule/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/earmodule/target/earmodule-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="archive" name="persist-1.0-SNAPSHOT.jar">
+        <element id="module-output" name="persist" />
+      </element>
+      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.31" />
+      <element id="library" level="project" name="Maven: org.apache.myfaces.core:myfaces-api:2.2.10" />
+      <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-atinject_1.0_spec:1.0" />
+      <element id="archive" name="ejbmodule-1.0-SNAPSHOT.jar">
+        <element id="artifact" artifact-name="ejbmodule:EJB exploded" />
+      </element>
+      <element id="library" level="project" name="Maven: javax.ejb:ejb-api:3.0" />
+      <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
+      <element id="archive" name="webmodule-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="webmodule:war exploded" />
+      </element>
+      <element id="library" level="project" name="Maven: org.eclipse.persistence:eclipselink:2.5.0" />
+      <element id="library" level="project" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" />
+      <element id="library" level="project" name="Maven: org.eclipse.persistence:commonj.sdo:2.1.1" />
+    </root>
+  </artifact>
+</component>

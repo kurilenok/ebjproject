@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/earmodule/earmodule.iml" filepath="$PROJECT_DIR$/earmodule/earmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejbmodule/ejbmodule.iml" filepath="$PROJECT_DIR$/ejbmodule/ejbmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejbproject.iml" filepath="$PROJECT_DIR$/ejbproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/persist/persist.iml" filepath="$PROJECT_DIR$/persist/persist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webmodule/webmodule.iml" filepath="$PROJECT_DIR$/webmodule/webmodule.iml" />
+    </modules>
+  </component>
+</project>

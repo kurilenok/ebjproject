@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - books@localhost" uuid="40a21018-9eee-452f-b115-508cf95c2382">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>books.*</schema-pattern>
+      <default-schemas>books.*</default-schemas>
+    </data-source>
+    <data-source name="NewPersistenceUnit/EclipseLink" uuid="0ecab2cc-0427-4f14-8f09-ab48ebe286f6">
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <schema-pattern>books.*</schema-pattern>
+      <default-schemas>books.*</default-schemas>
+    </data-source>
+  </component>
+</project>

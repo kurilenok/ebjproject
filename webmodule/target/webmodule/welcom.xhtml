@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+
+    <h2>My customers:</h2><br/>
+    <h:dataTable value="#{userController.users}" var="c" border="1">
+
+        <h:column>
+            <f:facet name="header">Id</f:facet>
+            #{c.id}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">First Name</f:facet>
+            #{c.first_name}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Last Name</f:facet>
+            #{c.last_name}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Password</f:facet>
+            #{c.password}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Action</f:facet>
+            <h:form>
+                <h:commandButton action="#{userController.removeUser(c.id)}" value="remove" />
+            </h:form>
+        </h:column>
+
+
+    </h:dataTable>
+
+
+    <h:form>
+        <label>First Name</label>
+        <h:inputText value="#{userController.first_name}"/><br/>
+        <label>Last Name</label>
+        <h:inputText value="#{userController.last_name}"/><br/>
+        <label>Password</label>
+        <h:inputText value="#{userController.password}"/><br/>
+        <h:commandButton value="add" action="#{userController.persistUser()}"/>
+    </h:form>
+
+    #{userController.first_name}<br/>
+    #{userController.last_name}<br/>
+    #{userController.password}<br/>
+
+
+</h:body>
+
+</html>
