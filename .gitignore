@@ -23,3 +23,10 @@ buildNumber.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+ejbmodule/target/generated-sources/
+ejbmodule/target/surefire/
+persist/target/generated-sources/
+webmodule/src/main/resources/
+webmodule/target/generated-sources/
+webmodule/target/surefire/
+webmodule/target/webmodule/WEB-INF/classes/org/numisoft/ejbproject/
