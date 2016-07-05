@@ -30,3 +30,5 @@ webmodule/src/main/resources/
 webmodule/target/generated-sources/
 webmodule/target/surefire/
 webmodule/target/webmodule/WEB-INF/classes/org/numisoft/ejbproject/
+
+*/workspace.xml

@@ -5,10 +5,16 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 
-<h:body>
+<h:head>
+    <h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
+    <title>Customers</title>
+</h:head>
 
-    <h2>My customers:</h2><br/>
-    <h:dataTable value="#{userController.users}" var="c" border="1">
+<h:body style="padding: 2%">
+
+    <h3>Existing customers:</h3><br/>
+
+    <h:dataTable value="#{userController.users}" var="c" class="table table-bordered table-striped" style="width: 50%">
 
         <h:column>
             <f:facet name="header">Id</f:facet>
@@ -31,26 +37,48 @@
         </h:column>
 
         <h:column>
-            <f:facet name="header">Action</f:facet>
+            <f:facet name="header">Actions</f:facet>
             <h:form>
-                <h:commandButton action="#{userController.removeUser(c.id)}" value="remove" />
+                <h:commandButton action="#{userController.removeUser(c.id)}" value="remove" class="btn btn-danger"/>
             </h:form>
         </h:column>
 
-
     </h:dataTable>
 
+    <br/>
 
-    <h:form>
-        <label>First Name</label>
-        <h:inputText value="#{userController.first_name}"/><br/>
-        <label>Last Name</label>
-        <h:inputText value="#{userController.last_name}"/><br/>
-        <label>Password</label>
-        <h:inputText value="#{userController.password}"/><br/>
-        <h:commandButton value="add" action="#{userController.persistUser()}"/>
+    <h3>New customer:</h3><br/>
+    
+    <h:form styleClass="form-horizontal" style="width: 35%">
+
+        <div class="form-group">
+            <h:outputLabel value="First Name" styleClass="control-label col-sm-3"/>
+            <div class="col-sm-6">
+                <h:inputText value="#{userController.first_name}" styleClass="form-control"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h:outputLabel value="Last Name" styleClass="control-label col-sm-3"/>
+            <div class="col-sm-6">
+                <h:inputText value="#{userController.last_name}" styleClass="form-control"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h:outputLabel value="Password" styleClass="control-label col-sm-3"/>
+            <div class="col-sm-6">
+                <h:inputText value="#{userController.password}" styleClass="form-control"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-10">
+                <h:commandButton value="add" action="#{userController.persistUser()}" class="btn btn-primary"/>
+            </div>
+        </div>
+
     </h:form>
-
 
 </h:body>
 
